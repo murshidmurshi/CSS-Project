@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Hover Color Changer</title>
+    <style>
+        .gradient{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            background: linear-gradient(-45deg,black,#f1a73f);
+            box-shadow: 0px 0px 20px 1px black;
+            background-size: auto;
+            width: 25vw;
+            height: 25vw;
+            background-size: 400% 400%;
+            border-radius: 50%;
+            background-position: 0% 10%;
+            
+        }
+        h1{
+            text-align: center;
+            margin: auto;
+            color: whitesmoke;
+        }
+        .gradient:hover{
+            animation: grade 10s ease infinite;
+        }
+        @keyframes grade {
+            0%{
+                background-position: 0% 10%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient">
+        <h1>Hover Me</h1>
+    </div>
+</body>
+</html>

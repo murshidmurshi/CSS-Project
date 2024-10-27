@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow </title>
+    <style>
+        .card{
+            height: 250px;
+            width: 350px;
+            background-color: rgb(220, 163, 163);
+            margin: 10px;
+            /* box-shadow: x-offset y-offset blur spread-blur color; */
+            /* box-shadow: 2px 5px 10px 2px red; */
+
+              /* box-shadow: inset(for inside) x-offset y-offset blur spread-blur color; */
+            /* box-shadow: inset 2px 5px 10px 2px red; */
+          /*   double color */
+           /*  box-shadow: x-offset y-offset color, x-offset y-offset color; */
+            box-shadow: 2px 5px red,10px 2px rgb(28, 255, 66);;
+            /* text-shadow: x-offset y-offset blur color; */
+            text-shadow: 2px 5px 1px white;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>Card 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, aliquid aut iste quasi error qui. Ut ipsa adipisci aliquid vero maxime, mollitia ipsum animi, et sint eligendi magni, consectetur iusto pariatur porro omnis. Corporis.</p>
+            </div>
+        <div class="card" id="card-2">
+            <h1>Card 2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi esse minus cum libero, sequi facere tenetur nihil iure doloremque optio debitis incidunt sapiente ullam cupiditate at. Non maiores quia mollitia libero excepturi modi exercitationem?</p></div>
+        <div class="card" id="card-3">
+            <h1>Card 3</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe veniam quas rem quaerat blanditiis corporis nisi sunt, nostrum ut? Ullam accusamus a voluptate facere ipsa dignissimos possimus repudiandae dolor ex autem eius, neque suscipit!</p>
+            
+    </div>
+</body>
+</html>

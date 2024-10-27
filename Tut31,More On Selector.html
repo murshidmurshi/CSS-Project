@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=`">
+    <title>More On Selector</title>
+    <style>
+        /* If p is contained by ul inside the div */
+       /*  div ul p{
+            background-color: yellow;
+        } */
+        /* If p is right inside div */
+        /* div > p{
+            background-color: red;
+        }  */
+        /* For p tag will be applied */
+        /* p{
+            background-color: blue;
+        } */
+        /* if p is contained after div then it will applied */
+        div+p{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquam facere sunt dolorem veniam, temporibus obcaecati, corporis vel tenetur ab dolore, nemo magnam.</p>
+            </div>
+
+            <ul><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sequi modi eius optio, commodi maxime voluptatum ipsam laboriosam debitis, ab libero nisi est!</p></ul>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolores quidem dolore deleniti iste ex dolor rem repellendus neque, non nam adipisci? Reprehenderit?</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum mollitia fugit nihil vel eos ipsum, nobis qui quia! Dignissimos aliquid recusandae dolor.</p>
+        <div></div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi sit debitis, cupiditate nemo voluptates accusantium aliquid excepturi molestias voluptas harum fugit error vero.</p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            text-align: center;
+            font-size: 70px;
+            background-color: red;
+            display: none;
+        }
+        @media only screen and (min-width:200px) and (max-width:400px){
+            #box1{
+                display: block;
+                background-color: yellow;
+                
+            }
+        }
+        @media only screen and (min-width:400px) and (max-width:600px){
+            #box1{
+                display: block;
+                background-color: rgb(0, 255, 13);
+                
+            }
+        }
+        @media only screen and (min-width:600px) and (max-width:750px){
+            #box2{
+                display: block;
+                background-color: rgb(0, 94, 255);
+                
+            }
+        }
+        @media only screen and (min-width:750px) and (max-width:900px){
+            #box3{
+                display: block;
+                background-color: rgb(255, 0, 212);
+                
+            }
+        }
+        @media only screen and (min-width:900px){
+            #box4{
+                display: block;
+                background-color: rgb(255, 0, 0);
+                
+            }
+        }
+
+    </style>
+</head>
+<body>
+     
+        <div id="box1" class="box">First Box</div>
+        <div id="box2" class="box">Second Box</div>
+        <div id="box3" class="box">Third Box</div>
+        <div id="box4" class="box">Fourth Box</div>
+     
+</body>
+</html>

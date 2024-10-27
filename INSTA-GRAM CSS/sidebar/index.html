@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <aside class="sidebar"> 
+        <div class="sidebar_inner">
+            <header class="sidebar_header">
+                <button class="sidebar_burger" onclick="ToggleSideBar()">
+                </button>
+                <img src="./static/img/as.svg"  class='sidebar_logo' alt="">
+                <span class="logo_name">Murshid</span>
+            </header>
+            <nav class="sidebar_nav">
+                <button>
+                    <img src="./static/img/home.png" alt="">
+                    <span>Home</span>
+                </button>
+                <button>
+                    <img src="./static/img/sport.png" alt="">
+                    <span>Sport</span>
+                </button>
+                <button>
+                    <img src="./static/img/Setting.png" alt="">
+                    <span style="animation-delay: 0.3s;">Setting</span>
+                </button>
+                <button>
+                    <img src="./static/img/account.png" alt="">
+                    <span style="animation-delay: 0.3s;">Account</span>
+                </button>
+            </nav>
+            Helll
+            <footer class="sidebar_footer">
+                <!-- #logout -->
+                <button>
+                    <img src="./static/img/logout.png" alt="">
+                    <span>Logout</span>
+                </button>
+            </footer>
+        </div>
+    </aside>
+</body>
+<script>
+    const ToggleSideBar=()=>
+        document.body.classList.toggle('open');
+</script>
+</html>

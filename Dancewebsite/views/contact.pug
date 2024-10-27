@@ -1,0 +1,23 @@
+extends base.pug
+
+block style
+           style 
+               include ../static/style.css
+           style 
+               include ../static/style2.css
+
+block content 
+                .container 
+                    h1  Murshid 
+                    form(action="/contact", method="post") 
+                        input(type="text" name="name" placeholder='Enter the Name')
+                        input(type="email" name="email" placeholder='Enter the email')
+                        input(type="gender" name="gender" placeholder='Enter the gender')
+                        input#age(type='age' placeholder='Enter the age' name='age')
+                        textarea#address(name='address' cols='30' rows='10' placeholder='Enter the address')
+                        textarea#more(name='more' cols='30' rows='10' placeholder='Enter the more about you')
+                        button submit
+
+block foot      
+        footer
+            p copyright murshid.com

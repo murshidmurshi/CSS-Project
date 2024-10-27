@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction - Alert, Prompt, Confirm</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Tutorial of Interaction - Alert, Prompt, Confirm</h1>
+    </div>
+    <script>
+        //alert
+        alert('click ok')
+
+        //prompt
+        let name=prompt('What Is Your Name?' ,'Guest')
+        console.log(name)
+
+        //confirm
+        //let AllowedPost=confirm('Do You Really Want To Delete The Post?')
+        let AllowedPost=confirm('Are You Above The 18Year?')     
+           //console.log(AllowedPost);
+
+        if(AllowedPost){
+            console.log('You Can Read The Post')
+           // console.log('Post has been Deleted')
+        }
+        else{
+            console.log('You Are Not Allowed To Read The Post')
+          //  console.log('Post has not  Deleted')
+        }
+        </script>
+</body>
+</html>

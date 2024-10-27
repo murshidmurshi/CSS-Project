@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+}
+
+/* .background{
+    background:url('../img/place.jpg') no-repeat;;
+    background-size: cover;
+    background-blend-mode: darken;
+} */
+.navbar::after {
+    content: '';
+    position: absolute;
+    height: 67%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: url('../img/place.jpg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.navbar-left img {
+    width: 48px;
+    margin: 9px;
+    border-radius: 50%;
+    height: 39px;
+}
+
+
+
+.navbar-left {
+    display: flex;
+    width: 50%;
+}
+
+.navbar-left li a {
+    color: white;
+    font-size: 22px;
+}
+
+.navbar-right {
+    width: 57%;
+    display: flex;
+    align-items: center
+}
+
+.navbar-right .small-form input {
+    height: 21px;
+    width: 13rem;
+}
+
+.navbar-right .small-form {
+    right: 11px;
+    position: absolute;
+}
+
+.burger{
+    position: absolute;
+right: 7px;
+top: 5px;
+
+}
+.burger .line{
+    opacity: 0;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 3px 3px;
+}
+
+
+ul li {
+    list-style: none;
+    margin: 13px 31px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    height: 385px;
+    margin-top: 70px;
+}
+
+.main .second-half img {
+    width: 138px;
+    border-radius: 68%;
+    height: 128px;
+}
+
+.main .first-half {
+    width: 50%;
+}
+
+
+
+
+.m-10 {
+    margin: 10px;
+}
+
+.btn {
+    background-color: yellow;
+    width: 79px;
+    height: 31px;
+    border: 2px solid black;
+    border-radius: 11px;
+}

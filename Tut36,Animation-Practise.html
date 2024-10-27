@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Practise</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 4px;
+            width: 0px;
+            background-color: red;
+            animation: loading 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s 1 alternate;
+            /* transition: all 1s ease 0s; */
+        }
+        @keyframes loading {
+            0%{
+                height: 4px;
+                width: 0px;
+            }
+            100%{
+                height: 4px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

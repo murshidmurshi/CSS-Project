@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else and swich statement</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Paragraph</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquid temporibus sunt perferendis, sapiente distinctio repellat architecto blanditiis dolores vero ullam eius eaque dolor nam dignissimos obcaecati assumenda, porro illo deleniti recusandae at officiis! </p>
+
+    </div>
+    <script>
+        var a='This is a string';
+        var a='This is a new string';
+        console.log(a)
+
+        /* let a='This is a string';
+        let a='new String';  */           //It will be shown Error
+        let b='45';   //Global Variable
+        {
+            let b='450';//Local Variable
+            console.log(b)
+        }
+        console.log(b)
+
+        const c= 'You Cannot change the Value After'
+       /*  c='Tjis si sfdnfdfdjklsfmdskm';  */    //it will shows Error
+
+        /* Else Statement */
+        const Age='lkjk';
+        if (Age<18){
+            console.log('You are under the age of 18');
+        }
+        else if (Age==18){
+            console.log('You are Equal the age of 18');
+        }
+        else if (Age>18){
+            console.log('You are Above the age of 18');
+        }
+        else{
+            console.log('Yor age is Something else')
+        }
+
+        /* switch Statement */
+        const cup=40;
+        switch (cup) {
+            case 2:{
+                console.log('This is the Value of cup 2')}
+                break;
+            case 40:{
+                console.log('This is the Value of cup 40')}
+                break;
+            case 5:{
+                console.log('This is the Value of cup 5')}
+                break;
+            case 6:{
+                console.log('This is the Value of cup 6')}
+                break;
+            default:
+                console.log('This is something Else')
+                break;
+        }
+
+    </script>
+</body>
+</html>

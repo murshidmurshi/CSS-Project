@@ -1,0 +1,267 @@
+/* css reset */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=EB+Garamond&family=Lato:ital,wght@0,900;1,100;1,900&family=Mukta:wght@800&family=Open+Sans:ital,wght@1,300&family=Rubik&family=Ubuntu:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navbar navigation */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* navigation logo */
+#logo {
+    margin: 3px 15px;
+}
+
+/* navigation img */
+#logo img {
+    height: 60px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+
+
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 470px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: brown;
+    margin: 10px;
+    padding: 7px 16px;
+    border-radius: 11px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    height: 546px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: url('./bg.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#services {
+    margin: 10px;
+    display: flex;
+    margin-top: 0px;
+}
+
+.services-container {
+    height: 562px;
+    margin: 10px 2px;
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 22px;
+    margin: 29px;
+    border-radius: 26px;
+    background-color: #e6e6e6;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+
+}
+
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item img {
+    height: 115px;
+    margin: 26px;
+    margin-top: 7px;
+}
+
+.client-item {
+    padding: 10px;
+}
+
+#client-section {
+    position: relative;
+    height: 296px;
+    /* margin-top: 55px; */
+}
+
+#client-section::before {
+    content: '';
+    position: absolute;
+    height: 289px;
+    width: 100%;
+    background: url('./bg.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/*contact-section */
+#contact-section {
+    position: relative;
+}
+
+#contact-section::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('./client.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    border: 0.1px solid black;
+}
+
+.contact-box label {
+    font-size: 22px;
+}
+
+.form-group,
+textarea {
+    margin-bottom: 13px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    margin-left: 5px;
+    border-radius: 13px;
+    border: none;
+    border: 0.1px solid black;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Utilities */
+
+:root {
+    --primary-color: rgb(3, 143, 3);
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}

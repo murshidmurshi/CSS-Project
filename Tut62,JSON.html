@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json ,Parse</title>
+</head>
+<body>
+    this is container
+    <script>
+        let obj={
+            name:'Murshid',
+            age:'18',
+            salary:'1,00,000'
+        }
+        console.log(obj)
+
+        //Convert to string
+        mystring=JSON.stringify(obj)
+        console.log(mystring)
+
+
+        //Convert to parse
+        myparse=JSON.parse(mystring);
+        console.log(myparse)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tut25  Position absolute, relative, fixed and sticky in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: rgb(222, 0, 0);
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            margin: 2px;
+            display: inline-block;
+        }
+        #box3{
+            /*position: relative; Relative to its Normal Position */
+            /*position: absolute; relative to its first Parent */
+            /* position:fixed;/* Fixed to browser window */
+            /* position:sticky;/* Sticked in default position*/
+            position: sticky;
+            top: 3px;
+            /* bottom: 19px;
+            right: 30px;
+            height: 300px;
+            width: 200px;
+            border-radius: 8px;
+            background-color: rgb(241, 241, 241);
+            box-shadow: 1px 1px 10px 1px  rgb(180, 180, 180); */
+        }
+        .container{
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            height: 1000px;
+        }
+        h3{
+            text-align: center;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">
+        <h3>Chat With Me</h3>
+    </div>
+    <div class="box" id="box4">4</div>
+    <div class="box" id="box5">5</div>
+    </div>
+</body>
+</html>

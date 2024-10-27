@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Practise</title>
+    <style>
+        body{
+            background-color: rgb(5, 53, 53);
+        }
+       
+        .box{
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            animation: Murshid 1s ease 0s 1 alternate ;
+            
+        }
+        @keyframes Murshid {
+            0%{
+                top: 0%;
+                left: 0%;
+                rotate: 60deg;
+            }
+            25%{
+                top: 0%;
+                left: 300px;
+                background-color: blue;
+                border-style: double;
+                rotate: 160deg;
+            }
+            50%{
+                top: 300px;
+                left: 300px;
+                rotate: 34deg;
+                background-color: white;
+                rotate: 300deg;
+            }
+            80%{
+                rotate: 360deg;
+                top: 300px;
+                left: 0px;
+                rotate: 34deg;
+                background-color: white;
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+Thsifjdnsjknfjdsnj
+        </div>
+    </div>
+</body>
+</html>

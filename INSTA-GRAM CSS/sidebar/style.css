@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #121212;
+}
+
+button{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+.sidebar{
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    width: 72px;
+    height: 100%;
+    transition: width 0.4s;
+    background-color: rgb(38, 208, 191);
+}
+body.open .sidebar{
+    width: 260px;
+}
+.sidebar_inner{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    padding-bottom: 10px;
+}
+.sidebar_burger{
+    width: 72px;
+    height: 72px;
+    background-image: url('./static/img/menu.png');
+    background-repeat: no-repeat;
+    place-items: center;
+    display: grid;
+    background-position: center;
+    transition: 0.3s;
+}
+body.open .sidebar_burger{
+    background-image: url('./static/img/close.png');
+}
+header{
+    display: flex;
+    align-items: center;
+    height: 72px;
+    background-color: rgb(222, 106, 106);
+}
+.sidebar_logo{
+    height: 20px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+body.open .sidebar_logo{
+    opacity: 1;
+}
+.sidebar button{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 50px;
+    width: 72px;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 0 25px;
+}
+.sidebar_nav{
+    flex: 1 1 auto;
+}
+.sidebar button img{
+    width: 24px;
+}
+.sidebar button span{
+    color: #f9f9f9;
+    opacity: 0;
+    transition: 0.3s;
+}
+@keyframes appear {
+    0%{
+        opacity: 0;        
+        translate: 0 10px;
+    }
+    100%{
+        opacity:1;
+        translate: 0;
+    }
+}
+body.open .sidebar button span{
+    opacity: 1;
+    animation: appear 0.3s both;
+}
+.sidebar_footer{
+    position: absolute;
+    bottom: -29rem;
+}
+.logo_name{
+    position: relative;
+    font-style: bold;
+    left: 10px;
+    font-weight: 700;
+}

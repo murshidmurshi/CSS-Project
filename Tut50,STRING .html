@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>This is paragrap</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, nisi. Unde quis labore, sed voluptatum ea id beatae iure sint temporibus ad quidem a iste obcaecati perferendis assumenda dicta esse repellat vero possimus odio, reprehenderit incidunt. Repellat architecto iure est exercitationem delectus mollitia ratione modi?</p>
+    </div>
+    <script>
+        var string='This is new string';
+        console.log(string);
+        strs=string.indexOf('is');
+        console.log(strs);
+
+        var substr=string.slice(0,6);
+        console.log(substr); 
+
+        var substr=string.substring(0,6);  //same as slice but some different learn later----
+        console.log(substr);
+
+        var substr1=string.substr(1,6); 
+        console.log(substr1); 
+
+        substr1=string.replace('new','Murshid')
+        console.log(substr1);
+
+        console.log(string.toUpperCase())  //String will convert uppercase
+
+        console.log(string.concat(' New STRing'))  //String will Added  
+
+        var strwithwhitespace='  this   contain more   and more spacece         ok     .'
+        console.log(strwithwhitespace)
+        console.log(strwithwhitespace.trim())   //strt and begginnnig space will cancel
+
+        console.log(string.charAt(2))   //what is second character value
+        console.log(string.charCodeAt(2))   //what is second character code 
+
+        console.log(string[3])   //3rd value
+    </script>
+</body>
+</html>

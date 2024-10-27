@@ -1,0 +1,25 @@
+
+.container{
+    height: 75vh;
+    background-color: red;
+    padding: 11px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 77%;
+}
+
+.container form input,textarea{
+    width: 438px;
+    margin: 9px;
+    text-align: center;
+    height: 62px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.container form textarea{
+    height: 83px;
+}

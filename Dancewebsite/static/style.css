@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: blanchedalmond; */
+    font-family: 'Baloo 2', cursive;
+}
+nav{
+    background-color: black;
+    height: 54px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+li{
+    list-style: none;
+    padding-top: 10px;
+}
+a{
+    color: aquamarine;
+    text-decoration: none; 
+    padding-left: 50px;
+    font-size: 20px;
+}
+a:hover{
+    color: rgb(233, 233, 233);
+}
+#inputdiv input{
+    height: 36px;
+    width: 107%;
+    border-radius: 10px;
+    padding: 4px 13px;
+}
+nav #inputdiv{
+    right: 168px;
+    position: absolute;
+    top: -2px;
+}
+#inputdiv button{
+    position: absolute;
+    top: 11px;
+    left: 130%;
+    padding: 4px;
+    padding: 4px 9px;
+    border-radius: 10px;
+    background: #1da0ff;
+    }
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    height:546px;
+    width: 100%;
+    background: url('apple_logo.png') no-repeat center center/cover;
+    z-index: -1;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 470px;
+    align-items: center;
+    justify-content: center;
+}
+#home p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+#service-container{
+    
+    margin: 46px 20px;
+    height: 364px;
+}
+#Service{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    height: 266px;
+width: 440px;
+
+}
+.box{
+    margin: 10px;
+    padding: 14px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#sponser-container{
+    height: 280px;
+}
+#sponser{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sponser-box img{
+    width: 100px;
+    height: 100px;
+}
+.sponser-box{
+    margin: 30px 60px;
+}
+#form{
+    height: 562x;
+    background-color: red;
+}
+#formfill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    margin: auto;
+}
+input,textarea{
+    width: 437px;
+    margin: 14px;
+    text-align: center;
+    height: 44px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+textarea{
+    height: 83px;
+}
+button{
+    padding: 5px;
+    width: 60px;
+}
+footer{
+    
+    background-color: aquamarine;
+    color: black;
+}
+footer p{
+    text-align: center;
+}

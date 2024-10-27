@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=EB+Garamond&family=Lato:ital,wght@0,900;1,100;1,900&family=Mukta:wght@800&family=Open+Sans:ital,wght@1,300&family=Rubik&family=Ubuntu:ital,wght@1,700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+            color: rgb(255, 255, 255);
+            font-family: 'Baloo 2', cursive;
+           /* height: 1000px; */
+        }
+        .navigation{
+            display: flex;
+            /* position:fixed; */   /* It is Fixed in normal Position  like header*/
+        }
+        li{
+            padding: 17px 37px;
+            list-style: none;
+            font-size: 22px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+        p{
+            margin: 20px;
+            text-align: center;
+        }
+        h1{
+            font-size: 42px;
+        }
+        /* section::before{
+            content: 'This is Before Pseudo Selector';
+        } */
+        /* section:after{
+            content: 'This is After Pseudo Selector';
+        } */
+        header::before{
+            content: '';
+            /* https://images.unsplash.com/photo-1584559582213-787a2953dcbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8ZnJ1aXR8fHx8fHwxNjY0ODYzOTc3&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080 */
+            /* https://source.unsplash.com/random/900×700/?fruit */
+            background: url(' https://images.unsplash.com/photo-1584559582213-787a2953dcbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8ZnJ1aXR8fHx8fHwxNjY0ODYzOTc3&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080 ') no-repeat center center/cover fixed ;
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae pariatur! Vitae, fugit rerum assumenda, beatae officia dolor reprehenderit explicabo quibusdam a odio expedita accusantium quo ea rem eius, quod amet quas reiciendis soluta.</p>
+    </section>
+</body>
+</html>

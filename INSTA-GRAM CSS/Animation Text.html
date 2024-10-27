@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Text</title>
+    <style>
+        .text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: linear-gradient(-45deg,black,#f1a73f);
+            /* background: linear-gradient(-45deg,#686ffd,#f1a73f,#686ffd,#f1a73f); */
+            font-weight: 900;
+            background-size: 400%;
+            background-position: 0% 10%;
+            font-size: 60px;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animationtext 1s ease-in-out infinite;
+            -webkit-animation: animationtext 1s ease-in-out infinite;
+            -moz-animation: animationtext 1s ease-in-out infinite;
+        }
+        @keyframes animationtext{
+            0%{
+                background-position: 0px 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            0%{
+                background-position:  0px 50% ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text">Animation background Text</div>
+</body>
+</html>

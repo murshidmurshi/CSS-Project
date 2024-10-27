@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat app</title>
+    <style>
+        .logo {
+    display: block;
+    margin: auto;
+    width: 50px;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgb(61, 222, 83), rgb(227, 227, 240));
+}
+
+.container {
+    max-width: 900px;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 70vh;
+    margin: auto;
+    padding: 23px;
+    margin-bottom: 23px;
+    overflow-y: auto;
+}
+
+#message {
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+#send-container {
+    display: block;
+    margin: auto;
+    max-width: 980px;
+    width: 100%;
+    text-align: center;
+}
+
+#messageinp {
+    width: 803px;
+    padding: 7px;
+}
+
+.btn {
+    width: 80px;
+    padding: 4px;
+    height: 30px;
+    background-color: #0279f8;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+    </style>
+    
+
+</head>
+<body>
+    <nav>
+        <img class="logo" src="whatsapp.png" alt="">
+    </nav>
+    <div class="container">
+        <div  id="message" class="right">Murshid:Hi nizam</div>
+        <div  id="message" class="left">Nizam:Hello,I am Fine</div>
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageinp" id="messageinp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+    
+</body>
+    <script src="socket.io/socket.io.js"></script>
+    <script>
+
+        var socket=io();
+        var form=document.getElementById('send-container')
+        var input=document.getElementById('messageinp')
+        var messagecontainer=document.getElementById('message');
+        form.addEventListener('submit',function(e){
+            e.preventDefault();
+            if(input.value){
+                socket.emit('new-message',input.value)
+                input.value='';
+            }
+        })
+        const append=(message,position)=>{
+            const messageElement=document.createElement('div')
+            messageElement.innerText=message;
+            messageElement.classList.add('message');
+            messageElement.classList.add('position');
+            messagecontainer.appendChild(messageElement)
+
+         }
+        socket.on('incoming',msg=>{
+           /*  var div=document.createElement('div');
+            div.textContent=msg;
+            message.appendChild(div) */
+            append('Murshid','right')
+        })
+    </script>
+    
+</html>

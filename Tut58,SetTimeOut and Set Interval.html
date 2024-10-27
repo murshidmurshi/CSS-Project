@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut and Set Interval</title>
+    <style>
+        span{
+            font-size: 40px;
+        }
+        .container p{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Heading </h1>
+        <p>The Current Time is <span id="time"></span></p>
+    </div>
+    <script>
+        //setInterval
+        function greet(){
+            console.log('Hello,Good Morning')
+        }
+        ///setTimeout(greet,2000);
+
+
+        Timeout=setTimeout(greet,2000);
+        console.log(Timeout)
+
+        clearTimeout(Timeout)  //Clear The TimeOut
+
+        //setInterval(greet,2000);  //it will Run Repetedly
+        Date()
+        //Display the Current Running Time
+        function Display(){
+            time=new Date();
+            time=document.getElementById('time').innerHTML=time;
+        }
+        setInterval(Display,1000)
+        //let objectDate=new Date()
+        //console.log(objectDate.getDate())
+        //console.log(objectDate.getHours()+':'+objectDate.getMinutes()+':'+objectDate.//getSeconds()) 
+
+        
+    </script>
+</body>
+</html>

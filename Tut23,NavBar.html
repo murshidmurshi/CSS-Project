@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        nav{
+            background-color: red;
+            border-radius: 3px;
+        }
+        nav ul{
+            overflow: auto;
+        }
+        nav ul li{
+            list-style: none;
+            float: left;
+            padding: 16px 45px 13px 9px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:black;
+        }
+        nav ul li a:hover{
+            text-decoration: underline;
+        }
+        .search{
+            float: right;
+            margin-right: 27px;
+        }
+        input{
+            width: 207px;
+            padding: 7px;
+            margin-top: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+        button{
+            border:none;
+            padding: 6px;
+            border-radius: 5px;
+            margin-left: 6px;
+            width: 62px;
+            background-color: rgb(0, 145, 255);
+        }
+        button:hover{
+            background-color: rgb(76, 173, 247);
+            cursor: pointer;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Service</a></li>
+                <div class="search">
+                    <input type="text" name="Search" id="" placeholder="Enter You Want To Search">
+                    <button>Search</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

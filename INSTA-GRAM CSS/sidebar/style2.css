@@ -1,0 +1,9 @@
+@media screen and (min-width:100px) and (max-width:400px) {
+    body.open .sidebar{
+        width: 200px;
+    }
+    .sidebar_footer{
+        position: absolute;
+        bottom: -32rem;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Media Queries with CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas: 
+            "nav nav nav nav"
+            "section section section aside "
+            "footer footer footer footer";
+        }
+        .item{
+            background-color: rgb(210, 131, 13);
+            padding: 0px 15px;
+
+        }
+        li{
+            list-style: none;
+            padding: 10px;
+        }
+        p,h1,h2{
+            text-align: center;
+        }
+        .container nav-item{
+            display: flex;
+            justify-content: center;
+
+        }
+        @media only screen and (max-width:500px){
+            body{
+                background-color: red;
+            }
+            .container{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas: 
+            "nav nav nav nav"
+            "section section section section "
+            "aside aside aside aside"
+            "footer footer footer footer";
+            }
+            
+            
+        }
+        @media only screen and (min-width:500px) and (max-width:700px){
+            body{
+                background-color: yellow;
+            }
+            .container{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas: 
+            "nav nav nav nav"
+            "section section section section "
+            "aside aside aside aside"
+            "footer footer footer footer";
+            }
+            
+        }
+        @media only screen and (min-width:700px) and (max-width:800px){
+            body{
+                background-color: blue;
+            }
+            .container{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas: 
+            "nav nav nav nav"
+            "section section section section "
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+            
+        }
+        @media only screen and (min-width:800px){
+            body{
+                background-color: green;
+            }
+            li{
+                font-size: 24px;
+            }
+            
+        }
+
+        nav{
+            grid-area: nav;
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="item">
+        <nav-item>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </nav-item>
+        </nav>
+        <section class="item">
+            <h2>About Us</h2>
+            dis labore ad sed repellendus obcaecati veritatis facere sunt, earum officiis officia quibusdam quasi cupiditate magni ex enim. Rem harum totam laborum. Eligendi esse illo facere voluptas iure consequuntur fugit similique, porro explicabo laboriosam qui et reicta aperiam dolorum? Mollitia error aspernatur laborum, quod qui, minima dicta fuga rem aperiam, dolor nihil? Mollitia nemo velit est laudantium esse cumque suscipit quasi hic veritatis unde. Ea aperiam nisi nesciunt aspernatur repudiandae voluptatibus minus, voluptates perspiciatis sunt excepturi recusandae esse quae doloribus similique non dolores mollitia eius. Iste, atque? Iure expedita possimus repudiandae molestiae, quo debitis vero ad nam libero tenetur a enim molestias corporis omnis sapiente nihil quaerat illo.
+        </section>
+        <aside class="item">
+            <h1>More About Us</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus provident expedita fuga, aliquam illo commodi molestiae accusantium. Possimus magni exercitationem totam cumque atque.</p>
+        </aside>
+        <footer class="item">
+            <p>CopyRights Murshid.com</p>
+        </footer>
+    </div>
+</body>
+</html>

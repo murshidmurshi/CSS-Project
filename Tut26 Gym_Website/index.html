@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murshid's Gym</title>
+    <link rel="stylesheet" href="Style.css">
+    <script>
+        function Togglebar() {
+            document.body.classList.toggle('open')
+        }
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+    <div class="sidebar_main">
+        <div class="sidebar" onclick="Togglebar()">
+            <div class="sidebar_burger">
+                <span><img src="GYM.jpg" alt="">
+                    <p>Murshid Gym</p>
+                </span>
+            </div>
+
+            <div class="sidebar-nav">
+                <button>
+                    <img src="home.png" alt="">
+                    <span style="animation-delay: 0.1s;">Home</span>
+                </button>
+                <button>
+                    <img src="about.png" alt="">
+                    <span style="animation-delay: 0.3s;">About</span>
+                </button>
+                <button>
+                    <img src="home.png" alt="">
+                    <span style="animation-delay: 0.4s;">Contact</span>
+                </button>
+            </div>
+            <!-- <img src="menu.png" alt="menu"> -->
+        </div>
+
+    </div>
+
+    <header class="heading">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="" alt="">
+            <div>Murshid's Fitness</div>
+
+        </div>
+        <!-- Mid box for nav -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the Best Gym in Mangalore</h2>
+        <form action="noaction.php">
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+       <!--  tool tip -->
+        <!-- <p title="murshid"><h1>Murshid</h1></p> -->
+
+        <!-- download -->
+        <!-- <p title="murshid"><h1><a href="www.google.com" download>Murshid</a></h1></p> -->
+
+        <!-- contentEditable -->
+        <!-- <p title="murshid" ><h1 contenteditable="true">Murshid</h1></p> -->
+
+        <!-- marquee -->
+        <p><h1 title="murshid"><marquee behavior="scrol" direction="right">Murshid</marquee></h1></p>
+        <!-- marquee behavior="scroll,slide,alternate"  -->
+
+</body>
+
+</html>

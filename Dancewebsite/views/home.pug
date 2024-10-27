@@ -1,0 +1,48 @@
+extends base.pug
+
+block style 
+            style 
+                include ../static/style.css
+
+block content 
+            
+
+            section#home
+                        h1 This is Dance Practise Website home 
+                        p
+                            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in blanditiis omnis, pariatur soluta impedit voluptatem amet veniam dolore cum maxime itaque quam.
+            section#service-container
+                                    h1 Our services
+                                    #Service
+                                        .box
+                                            img(src='/static/d.jpg' alt='')
+                                        .box
+                                            img(src='/static/d.jpg' alt='')
+                                        .box
+                                            img(src='/static/d.jpg' alt='')
+            section#sponser-container
+                                    h1 Our sponser
+                                    #sponser
+                                        .sponser-box
+                                                    img(src='/static/apple_logo.png' alt='')
+                                        .sponser-box
+                                                    img(src='/static/Google__G__Logo.svg.png' alt='')
+                                        .sponser-box
+                                                    img(src='/static/insta_logo.png' alt='')
+                                        .sponser-box
+                                                    img(src='/static/you_logo.png' alt='')
+            section#form
+                        h1 Fill The Form
+                        form#formfill(action='/' method='post')
+                            input#name(type='text' placeholder='Enter the Name' name='name')
+                            input#email(type='email' placeholder='Enter the email' name='email')
+                            input#age(type='age' placeholder='Enter the age' name='age')
+                            textarea#address(name='address' cols='30' rows='10' placeholder='Enter the address')
+                            textarea#more(name='more' cols='30' rows='10' placeholder='Enter the more about you')
+                            button submit
+
+
+
+block foot   
+            footer
+                    p copyright murshid.com

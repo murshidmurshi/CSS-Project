@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creating Layouts Using Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            "navbar navbar navbar navbar"
+            "aside section section section "
+            "footer footer footer footer"
+
+           
+        }
+        .item{
+            background-color: rgb(208, 135, 26);
+            border: 2px solid black;
+            padding: 10px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+            height: 500px;
+        }
+        #aside{
+            grid-area: aside;
+            width: 200px;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item" >
+            Home About Contact Services
+        </div>
+        <div id="section" class="item" >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis est reiciendis quisquam atque magnam incidunt non laborum vel. Veniam corrupti aut accusantium et ea consequatur laudantium nihil, excepturi ducimus officia repellendus ad cum corporis velit nemo expedita sapiente nulla quis fugiat mollitia dolore voluptatibus perspiciatis quasi? Quidem magni expedita officiis voluptate voluptatem placeat nesciunt debitis iusto, quisquam delectus inventore amet quos eligendi velit, quas aperiam mollitia, quod magnam vel alias sequi suscipit? Culpa, distinctio incidunt deleniti doloremque repellendus nobis quis, recusandae, consequuntur nisi atque assumenda? Fugit libero neque repellendus accusamus incidunt, sint, reprehenderit perferendis nemo placeat dolor illo praesentium nam corrupti, ut atque officiis magnam sequi vel dolorum earum commodi nisi sapiente molestiae. Facere sequi molestiae consequuntur, recusandae aliquid optio nobis impedit ex distinctio, sed aspernatur vitae? Us alias, similique qui, excepturi illo suscipit at facere. Maxime asperiores quidem vitae! Consequatur ducimus, ad asperiores temporibus eius quas expedita corporis perspiciatis a maiores placeat, dolores aut itaque iure perferendis iste sed qui sint, accusamus voluptatem modi omnis illum! Delectus perspiciatis molestiae at magnam veniam laborum totam molestias atque nulla quos, architecto nostrum dolor saepe id recusandae suscipit aliquam modi eius blanditiis.
+        </div>
+        <div id="aside" class="item" ></div>
+        <footer class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam culpa ducimus fugiat ipsa, asperiores natus modi voluptas, architecto similique sed rem, veritatis pariatur?
+        </footer>
+    </div>
+</body>
+</html>

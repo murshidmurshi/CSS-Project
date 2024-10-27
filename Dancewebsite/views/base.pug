@@ -1,0 +1,38 @@
+<!-- html 
+    head 
+        title='Murshid'
+        style   
+            include ../static/style.css
+    body    
+        nav 
+            ul 
+                li 
+                    a(href='/') Home
+                li 
+                    a(href='/') about
+                li 
+                    a(href='/') contact
+                li 
+                    a(href='/') services -->
+
+
+html
+    head   
+        title='Murshid'
+        block style
+    body
+        nav
+                ul
+                    li 
+                        a(href='/') Home
+                    li 
+                        a(href='/') About
+                    li 
+                        a(href='/contact') Contact
+                    li 
+                        a(href='/') Service
+                #inputdiv
+                    input#input(type='text' name='input' placeholder='Search here')
+                    button Submit
+        block content   
+        block foot

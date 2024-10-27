@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        let sum=(a,b)=>a+b;
+        /* let sum=(a,b)=>{
+            return a+b;
+        } */
+        
+        //Arrow Function
+        greet=()=>{
+            console.log('We Are Learning')
+        }
+        greet()
+        /* function greet(){
+            console.log('We Are Learning')
+        } */
+
+        //setInterval(()=>{console.log('WE ARE LEARNING'),10000})
+        /* setInterval(greet,1000) */
+
+        ///obj
+
+        //Arrow Function
+
+        //It is Also Called As Lexical this
+        
+        /* let obj={
+            greeting:'Good Morning',
+            names:['murshid','rosamn',' jamess'],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting + ' kukdoo kooo '+student)
+                })
+            }
+        }
+        obj.speak() */
+
+        //noraml  function
+
+        let obj={
+            greeting:'Good Morning',
+            names:['murshid','rosamn',' jamess'],
+            speak(){
+                this.names.forEach(function s(student){
+                    console.log(this.greeting + ' kukdoo kooo '+student);
+                })
+            }
+        }
+        obj.speak()
+
+
+
+
+    </script>
+</body>
+</html>

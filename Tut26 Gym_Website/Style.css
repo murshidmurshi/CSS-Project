@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(197, 197, 121) url('../img/gym/GYM_IMG.jpg') no-repeat fixed center;
+    background-color: black;
+    font-family: 'Baloo 2', cursive;
+
+
+
+}
+
+.left {
+    /* border: 2px solid rgb(235, 231, 231); */
+    margin: 5px;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: 30px;
+
+}
+
+.mid {
+    /* border: 2px solid rgb(255, 253, 253); */
+    margin: 5px;
+    display: block;
+    width: 46%;
+    margin: 32px auto;
+}
+
+.right {
+    /* border: 2px solid rgb(245, 243, 243); */
+    margin: 5px;
+    display: inline-block;
+    position: absolute;
+    top: 26px;
+    right: 10px;
+
+}
+
+.navbar {
+    display: inline;
+}
+
+.navbar li {
+    display: inline;
+    padding: 2px 10px
+}
+
+.navbar li a {
+    color: rgb(219, 220, 220);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: rgb(220, 217, 217);
+}
+
+img {
+    width: 50px;
+    display: block;
+    margin: auto;
+
+}
+
+.left div {
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 4px 14px;
+    margin: 0 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+.btn:hover {
+    background-color: rgb(51, 51, 47);
+}
+
+.container {
+    padding: 29px 40px;
+    margin: 76px 46px;
+    border: 2px solid white;
+    width: 43%;
+    color: white;
+    border-radius: 14px;
+    margin: auto;
+}
+
+.form_group input {
+    width: 49%;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 12px;
+    text-align: center;
+    display: block;
+    margin: 14px auto;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 54%;
+    margin: 16px auto;
+    background-color: #0064ff;
+    padding: 11px;
+}
+
+@media only screen and (min-width:375px) and (max-width:900px) {
+    .mid {
+        left: 10px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:760px) {
+    .heading {
+        opacity: 0;
+        height: 34px;
+    }
+
+    .form_group input {
+        width: 99%;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 3px;
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+    }
+
+    form .btn {
+        display: block;
+        width: 52%;
+        margin: 13px auto;
+        background-color: #0064ff;
+        padding: 3px;
+    }
+
+    .container h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .sidebar {
+        position: absolute;
+        left: 6px;
+        top: 4px;
+        background-color: yellow;
+        cursor: pointer;
+        height: 50%;
+        transition: width 0.5s;
+        width: 36px;
+    }
+
+
+
+    .sidebar img {
+        width: 30px;
+        display: block;
+        margin: auto;
+        left: 10px;
+        position: absolute;
+    }
+
+    body {
+        background-color: #8f8f8a;
+    }
+
+    body.open .sidebar {
+
+        width: 140px;
+    }
+
+    .sidebar_burger {
+        height: 30px;
+        background-color: red;
+        width: 35px;
+        position: absolute;
+        background: url('menu.png')no-repeat center/cover;
+    }
+
+    body.open .sidebar_burger {
+        background: url('close.png')no-repeat center/cover;
+
+    }
+
+    .sidebar_item {
+        position: absolute;
+        display: flex;
+        left: -8px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    button span {
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    body.open button span {
+        animation: appear 1s both;
+    }
+
+    .sidebar-nav {
+        margin-top: 36px;
+        position: absolute;
+        left: -6px;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        translate: 0 10px;
+
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0;
+
+    }
+}
+
+.sidebar-nav button {
+    background: none;
+    border: none;
+}
+
+.sidebar-nav button span {
+    margin-left: 50px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-nav button {
+    margin-bottom: 15px;
+}
+
+.sidebar_burger span img,
+p {
+    margin-left: 50px;
+    font-size: 2px;
+}
+
+.sidebar_burger span img p {
+    width: 10px;
+}
